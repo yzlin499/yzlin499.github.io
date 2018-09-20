@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>dawsasdasddsaf</title>
+    <title>实验2-第四届中国大学出版社图书奖公示</title>
+    <script src="../../js/lib/vue.min.js"></script>
 </head>
 <body>
-
+<h1>第四届中国大学出版社图书奖公示</h1>
+<div id="info">
+    <div v-for="p in prizeInfo">
+        <h3>{{p.title}}</h3>
+        <ol v-if="p.books !== undefined && p.books.length > 0">
+            <li v-for="b in p.books">{{b}}</li>
+        </ol>
+    </div>
+</div>
+<script src="demo2.js"></script>
 </body>
 </html>
