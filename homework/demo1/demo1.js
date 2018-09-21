@@ -15,7 +15,8 @@ var listVue = new Vue({
             {name: 'windows xp'},
             {name: 'windows vista'},
             {name: 'windows 7'},
-            {name: 'windows 8'}
+            {name: 'windows 8'},
+            {name: 'windows 10'}
         ]
     }
 });
